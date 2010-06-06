@@ -23,10 +23,46 @@ Copyrights?
 -----------
 
 This is django-based (so you require to checkout Django and place it nearby) python.
+  * http://www.djangoproject.com/
+
 I've put some jquery libraries in static/ folder just to make it easier to bootstrap a project.
+  * http://jquery.com/
 
 The rest is simple and therefore free to use.
 
 
 
 
+How to setup this?
+------------------
+
+You'll need python and django installed to run this at localhost.
+Just unfold this package, go to 'app' folder and type './run'.
+
+To setup a remote host you'll need one more file called 'host_settings.py' with contents alike 'settings/hosts.py'.
+
+
+How to use this?
+----------------
+
+Go in 'urls.py' and add controller line according to a name of project you're working on.
+For example, 'mail' -- copy the 'i' line and replace 'i' with smth convenient.
+
+Then go in 'templates' folder and create respectfully named folder. In our case, it would me 'mail' again.
+
+Go in that folder and start templating. Results you'll see at http://localhost:8000/mail/filename (w/o extension).
+
+That's it, no more, no less.
+
+
+Bonus!
+------
+
+There is simple wrapper for iPhone html prototyping in folder 'templates/i'.
+Use it so:
+http://localhost:8000/i/cascade?t1+t2+t3 where t1,t2,t3 are paths to your iphone templates.
+Look in 'templates/i' folder for the rest.
+
+
+
+Thanks for reading this.
