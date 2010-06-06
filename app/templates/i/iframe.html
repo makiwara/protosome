@@ -1,0 +1,23 @@
+<html>
+<head>
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+    <title>iPhone</title>
+    <style type="text/css" media="screen">
+        body { font: 80% Arial; color:#fff; background:#0a2527; padding:0px; margin:0; overflow:hidden;}
+		img { position:absolute; display:block }
+        iframe { width:335px; height:475px; border:0; background:#fff; }
+		.iframe { left:40px; top:161px; position:absolute; 
+			overflow:hidden; 
+			width:320px; height:460px; border:0; background:#fff; }
+    </style>
+</head>
+<body onload="
+	document.getElementById('iframe').src = '/{% block root %}i{% endblock %}/'+location.search.replace(/^\?/,'');
+	">
+	<img src="/static/iphone-bg.png" style="top:-30px; left:-140px" />
+	<img src="/static/iphone-carrier.png" style="left:40px; top:141px" />
+	<div class="iframe">
+    	<iframe id='iframe' src="about:blank" ></iframe>
+	</div>
+</body>
+</html>

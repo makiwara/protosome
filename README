@@ -1,0 +1,32 @@
+This is the Protosome.
+======================
+
+What the Protosome is?
+----------------------
+
+It's django+jquery based workbench for adhoc html prototyping.
+
+It is not a production tool, not a finished work.
+No, it's just a couple of half-brushed scripts I use in my everyday work.
+
+Who is this "I"?
+----------------
+
+My name is Nikolay Yaremko, I design web interfaces on everyday basis.
+
+My approach requires multiple series of HTML prototyping so I eventually come to this simple framework.
+
+You can contact me via LinkedIn: http://linkedin.com/in/mendokusee
+
+
+Copyrights?
+-----------
+
+This is django-based (so you require to checkout Django and place it nearby) python.
+I've put some jquery libraries in static/ folder just to make it easier to bootstrap a project.
+
+The rest is simple and therefore free to use.
+
+
+
+

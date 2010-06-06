@@ -1,0 +1,37 @@
+body      { margin:0; padding:0; }
+table     { border:none; font-size:1em }
+td        { vertical-align:top; }
+
+img       { border:none;   }
+img.block { display:block; }
+img.1x1   { width:1px; height:1px; border:0; visibility:hidden; display:block }
+
+.label, label     { cursor:pointer; cursor:hand; }
+
+form { padding:0; margin:0 }
+
+table,td { padding:0; margin:0; border:0 }
+
+hr   { height:1px; border:0; color:#cccccc; background:#cccccc }
+b    { font-weight:bold }
+tt   { display:block; padding: 5px 10px; background:#ffffe5 }
+
+.hidden, .invisible  { display:none; }
+
+.bottom         { vertical-align:bottom; }
+.middle         { vertical-align:middle; }
+.center         { text-align:center; }
+.right          { text-align:right; }
+.nobr, .nowrap  { white-space:nowrap; }
+.w100           { width:100%; }
+.w50            { width: 50%; }
+.w99 { width:99% }
+
+
+/* debugging purposes */
+ul.set li,
+ol.set li,
+table.set td  { outline:1px #aaaaaa dotted; } 
+.set          { outline:1px #000000 dotted; }
+
+/* ----------------------------------------------------------------------------------------------------------------------- */

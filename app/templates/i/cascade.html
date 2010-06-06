@@ -1,0 +1,21 @@
+<html>
+<head>
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+    <title>{% block title %}iPhone{% endblock %}</title>
+    <style type="text/css" media="screen">
+		body { margin:0; padding:0; background:#0a2527; }
+        iframe { border:0; width:390px; height:800px; overflow:hidden; }
+    </style>
+</head>
+<body style="height:100%">
+<script type="text/javascript" charset="utf-8">
+var items = location.search.replace(/^\?/,'').split('+');
+for (var i=0; i<items.length; i++)
+{
+	if (items[i] == '') break;
+	var name="{% block url %}iframe{% endblock %}";
+	document.write("<iframe src='/{% block root %}i{% endblock %}/"+name+"?"+items[i]+"'></iframe>");
+}
+</script>
+</body>
+</html>
